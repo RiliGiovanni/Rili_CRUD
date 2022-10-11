@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List!</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+
+</head>
+<body>
+
+    <div class="background-image">
+
+    <div class="title">
+        <h1> CRUD </h1>
+        <h4> Integrative Programming</h4>
+        </p>Things I Have To Do :</p>
+  
+    </div>
+
+    <div class = "form">
+
+        <form action = "javascript: void(0);" method="POST" onsubmit = "app.Add()">
+        <input type = "text" id = "add-todo"
+        placeholder= "Things to do...">
+        <input type="submit" value="Add" class="btn btn-primary"> 
+    </form>
+
+        <p> You have: </p>
+        <p id="counter"> </p> 
+        <table>
+            <caption>_________________________________</caption>
+
+            <tr class ="to-do">
+            <th><h3>To-Do:</h3></th>
+            </tr>
+        
+        <tbody id="tasks"></tbody>
+    </table>
+    </div>
+
+    <div id="edit-box" role="aria-hidden">
+        <form action="javascript:void(0);" method="POST"
+        id = "save-edit">
+        <input type ="text" id="edit-todo">
+        <input type="submit" value="Save" class="btn btn-success">
+        <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
+    </form>
+    </div>
+
+    <script src="script.js"></script>
+
+</div>
+
+</body>
+</html>
